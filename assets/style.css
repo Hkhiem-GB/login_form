@@ -13,6 +13,7 @@
     --glow: 0 0 35px rgba(255, 107, 0, 0.4), 0 0 15px rgba(255, 107, 0, 0.2);
     --blur: none;
     --label-active: #FF6B00;
+    --input-border: #ddd;
 }
 
 /* Orange Theme (Bản Cam đậm) */
