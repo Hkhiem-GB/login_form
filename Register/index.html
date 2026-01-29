@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="../assets/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../assets/script.js"></script>
+  </head>
+
+  <body>
+    <div class="theme-switch-wrapper">
+      <span id="theme-label"></span>
+      <label class="theme-switch" for="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <div class="slider round"></div>
+      </label>
+    </div>
+
+    <div class="background-container">
+      <div class="login-wrapper">
+        <div class="login-card">
+          <div class="login-header">
+            <h2>Tạo tài khoản</h2>
+            <p>Gia nhập cộng đồng cùng chúng tôi</p>
+          </div>
+
+          <form id="registerForm">
+            <div class="input-group">
+              <input type="text" id="reg-user" required>
+              <label>Tên đăng nhập</label>
+            </div>
+
+            <div class="input-group">
+              <input type="email" id="reg-email" required>
+              <label>Email của bạn</label>
+            </div>
+
+            <div class="input-group">
+              <input type="password" id="reg-pass" required>
+              <label>Mật khẩu</label>
+            </div>
+
+            <button type="submit" class="btn-login">
+              <span class="btn-text">Đăng Ký Ngay</span>
+              <div class="loader"></div>
+            </button>
+
+            <div class="form-footer">
+              <p class="signup-text">Đã có tài khoản? <a href="../Login/index.html">Đăng nhập</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

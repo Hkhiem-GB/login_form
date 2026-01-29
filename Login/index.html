@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+  <body>
+    <div class="theme-switch-wrapper">
+      <span id="theme-label"></span>
+      <label class="theme-switch" for="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <div class="slider round"></div>
+      </label>
+    </div>
+
+    <div class="background-container">
+      <div class="shape"></div>
+      <div class="shape"></div>
+
+      <div class="login-wrapper">
+        <div class="login-card">
+          <div class="login-header">
+            <h2>Chào mừng</h2>
+            <p>Đăng nhập để bắt đầu hành trình</p>
+          </div>
+
+          <form id="loginForm">
+            <div class="input-group">
+              <input type="text" id="username" required>
+              <label for="username">Tên đăng nhập</label>
+              <div class="bar"></div>
+            </div>
+
+            <div class="input-group">
+              <input type="password" id="password" required autocomplete="off">
+              <label for="password">Mật khẩu</label>
+              <span class="toggle-password" id="togglePassword">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                        </span>
+              <div class="bar"></div>
+            </div>
+
+            <button type="submit" class="btn-login">
+              <span class="btn-text">Đăng Nhập</span>
+              <div class="loader"></div>
+            </button>
+
+            <div class="form-footer">
+              <a href="#" class="forgot-pass">Quên mật khẩu?</a>
+              <p class="signup-text">Chưa có tài khoản? <a href="../Register/index.html">Đăng ký ngay</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="success-toast" class="toast">Đăng nhập thành công!</div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../assets/script.js"></script>
+  </body>
+</html>
